@@ -33,11 +33,11 @@ def unblock():
                 Label(window,text=web+'UnBlocked\n',font='arial').place(x=350,y=200)
                 with open(host_path,'r+') as website_un:
                     for line in website_un:
-                        print('Line1 :-'+line)
+                        #print('Line1 :-'+line)
                         if web in line:
                             temp_un=ip_address+' '+web
                             line=line.replace(temp_un,'')
-                        print('line2 :- '+line)     
+                        #print('line2 :- '+line)     
                         temp_f=temp_f+line
 
                 with open(host_path,'w') as new_file:
